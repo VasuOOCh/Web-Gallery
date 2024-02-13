@@ -22,7 +22,11 @@ img{
 
 }
 
-img:hover{
+.img{
+    transition: 0.5s;
+}
+
+.img:hover{
     transform: scale(1.15);
 }
 
@@ -58,4 +62,25 @@ img:hover{
 
 a{
     color: inherit;
+}
+
+.img{
+    position: relative;
+}
+.img span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    color: white;
+    font-size: 20px;
+}
+
+.img:hover span{
+    visibility: visible;
+}
+
+.img:hover img{
+    filter: blur(3px) brightness(50%);
 }

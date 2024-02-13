@@ -20,6 +20,86 @@ a{
 }
 
 h2{
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+body{
+    background: url(pexels-kelly-4171932.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: 0px -60px;
+}
+
+img{
+    height: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20%;
+    scroll-snap-align: center;
+    
+
+    transition: 0.5s;
+}
+
+.ss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    overflow: scroll;
+    padding: 30px 0;
+    gap: 30px;
+    background-color: rgba(74, 74, 74,0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    box-shadow: 0 0 1px 1px white;
+    border-radius: 30px;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.ss::-webkit-scrollbar {
+    display: none;
+  }
+  
+button{
+    font-size: 20px;
+    border-radius: 50%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    align-items: center;
+}
+
+.focus{
+    transform: scale(1.2);
+}
+
+
+.img{
+    position: relative;
+}
+.img span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    color: white;
+    font-size: 20px;
+}
+
+.img:hover span{
+    visibility: visible;
+}
+
+.img:hover img{
+    filter: blur(3px) brightness(50%);
 }
