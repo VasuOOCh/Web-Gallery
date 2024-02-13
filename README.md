@@ -6,3 +6,6 @@
 ## How to stop the current running server : 
 >> On the terminal open, press ' Ctrl + c ' for quitting the server.
 
+# Services used : 
+>> NodeJS Express EJS 
+
