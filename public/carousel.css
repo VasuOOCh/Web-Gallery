@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(pexels-kelly-4171932.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -60px;
+}
+
+button{
+    border-radius: 50%;
+}
+
+img{
+    height: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20px;
+
+    scroll-snap-align: center;
+    transition: 0.5s;
+}
+
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.itemList::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 150px;
+
+    
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+}
+
+
+.itemList{
+    /* max-width: 1000px; */
+    width: 990px;
+    display: flex;
+    overflow: scroll;
+
+    padding: 50px;
+    border-radius: 30px;
+
+    scroll-behavior: smooth;
+    gap: 50px;
+    scroll-snap-type:x mandatory;
+
+    background-color: rgba(74, 74, 74,0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    box-shadow: 0 0 1px 1px white;
+
+}
+
+
+.top {
+    /* margin: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top > * {
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.top i:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+a{
+    color: inherit;
+}
+
+.focus{
+    transform: scale(1.2);
+}
+
+.notFocus{
+    filter: grayscale(100%);
+}
