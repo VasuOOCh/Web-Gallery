@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ary Gallery | Home</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="home" style="visibility: hidden;">This is hidden</div>
     <div class="navbar">
         <ul class="navlist">
             
-            <li class="navItem webText" id="webText">WEB GALLERY | </li>
+            <li class="navItem webText" id="webText"><a href="http://localhost:8080/">WEB GALLERY | </a></li>
             <li class="navItem">Home</li>
             <li class="navItem">About</li>
             <li class="navItem">Contact us</li>
@@ -58,19 +59,19 @@
 
     <div class="about" id="about">
         <h2>About</h2>
-        <div class="aboutBox b1">
+        <div class="aboutBox b1" data-aos="slide-right" data-aos-duration="1000">
             <img src="collage.jpg" alt="#">
         
             <p>A collage image gallery is a visually appealing way to display multiple images in a single view. Images are usually arranged in a mosaic or grid layout, resembling a physical collage.</p>
         </div>
 
-        <div class="aboutBox b2">
+        <div class="aboutBox b2" data-aos="slide-left" data-aos-duration="1000">
             <img src="scrolling_infinite.png" alt="#">
         
             <p>A staged scrolling image gallery presents images in a sequential manner, often with one image displayed prominently at a time while the rest are partially visible or hidden.</p>
         </div>
 
-        <div class="aboutBox b3">
+        <div class="aboutBox b3" data-aos="slide-right" data-aos-duration="1000">
             <img src="Product-gallery-slider.png" alt="#">
         
             <p>A carousel image gallery displays multiple images in a rotating carousel format, typically with navigation arrows or indicators for users to browse through the images. </p>
@@ -80,8 +81,8 @@
 
     <hr>
 
-    <h2 class="contactText">Contact Us</h2>
-    <div class="contact">
+    <h2 class="contactText" >Contact Us</h2>
+    <div class="contact" data-aos="fade-up" data-aos-duration="1000">
         <div class="message contactItem">
             <h1>Message Us</h1>
             <p>Have any questions ? If YES then you can contact us by filling up the form provided on the right section, we will try to reach out as soon as possible.
@@ -118,6 +119,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/b51a57a65a.js" crossorigin="anonymous"></script>
     <script src="/app.js"></script>
 </body>

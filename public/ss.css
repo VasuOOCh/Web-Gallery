@@ -30,6 +30,7 @@ body{
     background-size: cover;
     background-repeat:no-repeat;
     background-position: 0px -60px;
+    background-attachment: fixed;
 }
 
 img{
@@ -41,65 +42,55 @@ img{
     
 
     transition: 0.5s;
+
+    
+}
+
+.img{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+.img:nth-child(odd) {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+
+.img:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.img > * {
+    padding: 30px;
 }
 
 .ss{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
-    width: 500px;
-    overflow: scroll;
+    /* height: 400px; */
+    width: 100%;
+    /* overflow: scroll; */
     padding: 30px 0;
     gap: 30px;
-    background-color: rgba(74, 74, 74,0.2);
-    backdrop-filter: blur(5px);
-    border: 1px solid white;
-    box-shadow: 0 0 1px 1px white;
-    border-radius: 30px;
-
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
-.ss::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
   }
   
-button{
-    font-size: 20px;
-    border-radius: 50%;
-}
-.main{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    
-    align-items: center;
-}
-
-.focus{
-    transform: scale(1.2);
-}
 
 
-.img{
-    position: relative;
-}
-.img span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    visibility: hidden;
-    color: white;
-    font-size: 20px;
-}
-
-.img:hover span{
-    visibility: visible;
-}
-
-.img:hover img{
-    filter: blur(3px) brightness(50%);
-}

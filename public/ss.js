@@ -1,3 +1,5 @@
+AOS.init();
+
 let ss = document.querySelector(".ss");
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");

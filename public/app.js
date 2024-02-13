@@ -1,3 +1,5 @@
+AOS.init();
+
 let body = document.querySelector("body");
 let navlist = document.querySelector(".navlist");
 let webText = document.getElementById("webText");
