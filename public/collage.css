@@ -6,6 +6,7 @@ h2{
 }
 
 body{
+    position: relative;
     background: url(pexels-kelly-4171932.jpg);
     background-size: cover;
     background-repeat:no-repeat;
@@ -83,4 +84,34 @@ a{
 
 .img:hover img{
     filter: blur(3px) brightness(50%);
+}
+
+.imgView{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(2px);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    transition: 0.5s;
+    /* display: none; */
+    padding: 100px;
+}
+
+.imgView > button{
+    position: absolute;
+    right: 160px;
+    top: 78px;
+}
+
+.fullImg {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
 }

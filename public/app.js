@@ -3,7 +3,8 @@ AOS.init();
 let body = document.querySelector("body");
 let navlist = document.querySelector(".navlist");
 let webText = document.getElementById("webText");
-let form = document.querySelector("form")
+let form = document.querySelector("form");
+let bar = document.querySelector(".progress")
 
 window.addEventListener("scroll", function (event) {
  
@@ -16,33 +17,35 @@ window.addEventListener("scroll", function (event) {
         navlist.classList.remove("navAfter")
     }
 
-    if(scroll_y >= 285) {
-        console.log("yesss");
-        webText.classList.add("webTextAfter")
-    } else{
-        webText.classList.remove("webTextAfter")
-    }
+    // if(scroll_y >= 285) {
+    //     // console.log("yesss");
+    //     webText.classList.add("webTextAfter")
+    // } else{
+    //     webText.classList.remove("webTextAfter")
+    // }
 
     if(scroll_y < 603){
-        navlist.children[1].classList.add("current");        
+        navlist.children[0].classList.add("current");        
+        navlist.children[1].classList.remove("current");        
         navlist.children[2].classList.remove("current");        
-        navlist.children[3].classList.remove("current");        
 
     }
     else if( scroll_y >= 603 && scroll_y< 1300) {
-        navlist.children[1].classList.remove("current");        
-        navlist.children[2].classList.add("current");        
-        navlist.children[3].classList.remove("current");
+        navlist.children[0].classList.remove("current");        
+        navlist.children[1].classList.add("current");        
+        navlist.children[2].classList.remove("current");
     }
     else if( scroll_y >= 1300) {
-        console.log("reached")
+        // console.log("reached")
+        navlist.children[0].classList.remove("current");        
         navlist.children[1].classList.remove("current");        
-        navlist.children[2].classList.remove("current");        
-        navlist.children[3].classList.add("current");
+        navlist.children[2].classList.add("current");
     }
+    let width = (scroll_y/1400)*100
+    bar.style.width = `${width}%`;
 });
 
-navlist.children[1].addEventListener("click", (e)=> {
+navlist.children[0].addEventListener("click", (e)=> {
     console.log("cliked")
     const home  = document.querySelector(".home")
     home.scrollIntoView({
@@ -50,7 +53,7 @@ navlist.children[1].addEventListener("click", (e)=> {
     });
 
 })
-navlist.children[2].addEventListener("click", (e)=> {
+navlist.children[1].addEventListener("click", (e)=> {
     console.log("cliked")
     const about  = document.querySelector(".about")
     about.scrollIntoView({
@@ -59,7 +62,7 @@ navlist.children[2].addEventListener("click", (e)=> {
 
 })
 
-navlist.children[3].addEventListener("click", (e)=> {
+navlist.children[2].addEventListener("click", (e)=> {
     console.log("cliked")
     const about  = document.querySelector(".contactText")
     about.scrollIntoView({
@@ -71,3 +74,5 @@ navlist.children[3].addEventListener("click", (e)=> {
 form.addEventListener("submit", ()=>{
     alert("Response has been submitted")
 })
+
+

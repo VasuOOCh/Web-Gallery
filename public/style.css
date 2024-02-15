@@ -63,17 +63,16 @@ a{
     justify-content: center;
     align-items: center;
     /* color: white; */
-    font-size: 80px;
-    letter-spacing: 10px;
+    font-size: 100px;
+    letter-spacing: 30px;
     margin-top: 150px;
     /* font-family: "Source Code Pro", monospace; */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 
-    /* background-color: #1774CF; */
-    /* background: linear-gradient(to right, #0018f5 0%, #ff0400 100%); */
-    /* -webkit-background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
+    background: linear-gradient(135deg, #002a96 0%, #8115b8 50%, #a70334 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .line{
@@ -86,10 +85,9 @@ a{
 .subText{
     font-family: "Protest Riot", sans-serif;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 35px;
-}
-.subText p {
     color: white;
 }
 
@@ -212,13 +210,6 @@ a{
 }
 
 
-.mainText span{
-    
-    -webkit-text-stroke:1px rgb(255, 255, 255);
-    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-    /* -webkit-text-stroke:0 0 1px white; */
-    /* color:transparent; */
-}
 
 .message{
     width: 50%;
@@ -321,6 +312,12 @@ form * {
     display: block;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-  }
+  } */
+
+.progress {
+    height: 4px;
+    background:linear-gradient(to left, rgb(0, 123, 255),green, rgb(225, 1, 246), rgb(255, 0, 0));
+    transition: 0.5s ease-out;
+}

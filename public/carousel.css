@@ -4,10 +4,11 @@
 }
 
 body{
-    background: url(pexels-kelly-4171932.jpg);
+    background: url(http://localhost:8080/imagesFull/img2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px -60px;
+
 }
 
 button{
@@ -15,7 +16,7 @@ button{
 }
 
 img{
-    height: 300px;
+    height: 200px;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 20px;
@@ -39,7 +40,7 @@ h2{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin-top: 150px;
+    margin-top: 330px;
 
     
 }
@@ -53,7 +54,7 @@ button{
 
 .itemList{
     /* max-width: 1000px; */
-    width: 990px;
+    width: 690px;
     display: flex;
     overflow: scroll;
 
@@ -64,10 +65,10 @@ button{
     gap: 50px;
     scroll-snap-type:x mandatory;
 
-    background-color: rgba(74, 74, 74,0.2);
-    backdrop-filter: blur(5px);
-    border: 1px solid white;
-    box-shadow: 0 0 1px 1px white;
+    /* background-color: rgba(74, 74, 74,0.2); */
+    /* backdrop-filter: blur(5px); */
+    /* border: 1px solid white; */
+    /* box-shadow: 0 0 1px 1px white; */
 
 }
 
@@ -77,6 +78,8 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(112, 112, 112,0.5);
+    backdrop-filter: blur(5px);
 }
 
 .top > * {
@@ -121,4 +124,8 @@ a{
 
 .img:hover img{
     filter: blur(3px) brightness(50%);
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
 }
