@@ -16,16 +16,16 @@ This will install the node modules used in the website on your network(PC).
 
 # Key specifications of different image gallery
 
->> Collage
+>> Collage ->
 In the collage view, low quality images have been used to save browser memory and response time which also helps in preventing lagging.
 
->> Carousel
+>> Carousel ->
 In carousel view, the images used in the dock view and background view are not same, ie they look same but they are of different sizes, this is done because the dock view is samller in dimentions, low space images have been used in dock view (Thus saving a lot of memory), while high quality images are used in background, which are synced using extensive javascript.
 
->> Staged Scrolling
+>> Staged Scrolling ->
 Staged scrolling has been kept normal.
 
->> Website description
+Website description
 1) Head Section: 
 Contains metadata and links to external resources such as stylesheets and JavaScript files.
 Charset and viewport meta tags for character encoding and responsive design.
