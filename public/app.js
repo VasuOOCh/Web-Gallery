@@ -10,7 +10,7 @@ window.addEventListener("scroll", function (event) {
  
     let scroll_y = this.scrollY;
     let scroll_x = this.scrollX;
-    // console.log(scroll_y);
+    console.log(scroll_y);
     if(scroll_y > 80) {
         navlist.classList.add("navAfter")
     } else if (scroll_y == 0){
@@ -41,7 +41,7 @@ window.addEventListener("scroll", function (event) {
         navlist.children[1].classList.remove("current");        
         navlist.children[2].classList.add("current");
     }
-    let width = (scroll_y/1400)*100
+    let width = (scroll_y/1312)*100
     bar.style.width = `${width}%`;
 });
 

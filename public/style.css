@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Permanent+Marker&family=Protest+Revolution&display=swap');
 
 
 *{
@@ -11,7 +13,7 @@
 
 body{
     /* position: relative; */
-    background: url(coverImgnew.jpg);
+    background: url(coverFinal.jpg);
     background-size: contain;
     background-repeat:no-repeat;
     background-position: 0px -60px;
@@ -71,8 +73,8 @@ a{
     font-weight: bold;
 
     background: linear-gradient(135deg, #002a96 0%, #8115b8 50%, #a70334 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .line{
@@ -100,6 +102,10 @@ a{
     
 }
 
+.selectionBox a{
+    font-family: "Permanent Marker", cursive;
+}
+
 .photoBox{
     display: flex;
     flex-direction: column;
@@ -112,6 +118,8 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
     transition: 0.5s;
+    /* flex-grow: 0; */
+    height: 100px;
 }
 
 .photoBox span{
@@ -125,6 +133,7 @@ a{
     text-align: center;
     margin-top: 90px;
     font-weight: bold;
+    font-family: "Protest Revolution", sans-serif;
 }
 
 .hide{
@@ -147,7 +156,7 @@ a{
     background-color: white;
 }
 
-.about h2{
+.heading{
     font-family: "Source Code Pro", monospace;
     font-size: 40px;
     text-align: center;
@@ -167,9 +176,11 @@ a{
     text-justify:inter-word;
 }
 
-.aboutBox p{
+.aboutBox p,h2{
     margin: 0 40px;
 }
+
+
 
 .b1,.b3{
     margin-left: 200px;
@@ -203,10 +214,20 @@ a{
 .contact{
     padding: 50px;
     display: flex;
+    background-color: rgb(213, 213, 246);
+    position: relative;
+    height: 160px;
+    overflow: hidden;
 }
 
 .contactItem{
     background-color: rgb(213, 213, 246);
+}
+
+.object{
+    position: absolute;
+    left: 40px;
+    top: 60px;
 }
 
 
@@ -320,4 +341,119 @@ form * {
     height: 4px;
     background:linear-gradient(to left, rgb(0, 123, 255),green, rgb(225, 1, 246), rgb(255, 0, 0));
     transition: 0.5s ease-out;
+}
+
+
+.ssMain{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(179, 179, 179);
+    padding: 10px 10px;
+    overflow: scroll;
+    border-radius: 10px;
+    /* margin: 20px; */
+    flex-shrink: 0;
+}
+
+.ssMain::-webkit-scrollbar{
+    width: 0;
+}
+
+.ssItem{
+    border-radius: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(123, 123, 123);
+    margin: 15px;
+}
+
+.ssView{
+    animation-name: ss;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ss{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-500px);}
+}
+
+.collMain{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 10px;
+    /* margin: 20px; */
+    padding: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+}
+
+
+.collItem{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(123, 123, 123);
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.collView{
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: collAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes collAnim {
+    0%{transform: scale(1);}
+    100%{transform: scale(3);}
+}
+
+.carMain{
+    width: 180px;
+    /* height: 130px; */
+    background-color: rgb(179, 179, 179);
+    overflow: scroll;
+    border-radius: 10px;
+    /* margin: 20px; */
+    flex-shrink: 0;
+
+    padding: 15px 10px;
+
+}
+
+.carMain::-webkit-scrollbar{
+    width: 0;
+}
+
+.carView{
+    display: flex;
+    align-items: center;
+    animation-name: carAnim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.carItem{
+    flex-shrink: 0;
+    border-radius: 10px;
+    height: 110px;
+    width: 110px;
+    background-color: rgb(123, 123, 123);
+    margin: 5px;
+}
+
+@keyframes carAnim {
+    0%{transform: translateX(0)}
+    100%{transform: translate(-200px);}
 }
