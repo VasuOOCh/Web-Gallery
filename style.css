@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Permanent+Marker&family=Protest+Revolution&display=swap');
+
+
+*{
+    margin : 0px;
+    padding: 0px;
+}
+
+body{
+    /* position: relative; */
+    background: url(coverFinal.jpg);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: 0px -60px;
+    
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    z-index: 99 !important;
+}
+
+.navlist{
+    display: inline;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    transition: 0.5s;
+
+    letter-spacing: 2px;
+}
+
+.navItem{
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.navItem:hover{
+    border-bottom: 3px solid yellow;
+}
+
+.mainText{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    font-size: 100px;
+    letter-spacing: 30px;
+    margin-top: 150px;
+    /* font-family: "Source Code Pro", monospace; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #002a96 0%, #8115b8 50%, #a70334 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line{
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 40px;
+}
+
+.subText{
+    font-family: "Protest Riot", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+}
+
+.selectionBox{
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    z-index: -10 !important;
+    
+}
+
+.selectionBox a{
+    font-family: "Permanent Marker", cursive;
+}
+
+.photoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    /* flex-grow: 0; */
+    height: 100px;
+}
+
+.photoBox span{
+    margin-top: 10px;
+}
+
+.selectionText{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 8px;
+    text-align: center;
+    margin-top: 90px;
+    font-weight: bold;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    width: 300px;
+}
+
+.photoBox:hover{
+    box-shadow: 0px 0px 5px 5px yellow;
+    backdrop-filter: blur(10px);
+}
+
+.about{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.heading{
+    font-family: "Source Code Pro", monospace;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.aboutBox{
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: justify;
+    text-justify:inter-word;
+}
+
+.aboutBox p,h2{
+    margin: 0 40px;
+}
+
+
+
+.b1,.b3{
+    margin-left: 200px;
+}
+.b2{
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+.about img{
+    height: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.current{
+    color: rgb(255, 255, 91);
+}
+
+.navAfter{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10 !important;
+    /* border-radius: 50px; */
+    border-bottom: 1px solid black;
+    font-size: 30px;
+}
+
+.contact{
+    padding: 50px;
+    display: flex;
+    background-color: rgb(213, 213, 246);
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.contactItem{
+    background-color: rgb(213, 213, 246);
+}
+
+.object{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+}
+
+
+
+.message{
+    width: 50%;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.message p {
+    margin-top: 20px;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* align-items: center; */
+}
+
+form input{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form textarea{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form button{
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(255, 207, 15);
+    border-radius: 20px;
+}
+
+form * {
+    margin: 5px;
+}
+
+.contactAfter{
+    background-color: rgb(213, 213, 246);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 48px;
+}
+
+.separate {
+    height: 20px;
+    width: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+.social{
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.social{
+    text-decoration: solid black 1px;
+}
+
+.contactText{
+    font-family: "Source Code Pro", monospace;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+
+
+/* .click{
+    transform: scale(0.8);
+} */
+
+
+.webText{
+    /* visibility: hidden; */
+    display: none;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    font-weight: bold;
+
+}
+
+.webTextAfter{
+    display: block;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+  } */
+
+.progress {
+    height: 4px;
+    background:linear-gradient(to left, rgb(0, 123, 255),green, rgb(225, 1, 246), rgb(255, 0, 0));
+    transition: 0.5s ease-out;
+}
+
+
+.ssMain{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(179, 179, 179);
+    padding: 10px 10px;
+    overflow: scroll;
+    border-radius: 10px;
+    /* margin: 20px; */
+    flex-shrink: 0;
+}
+
+.ssMain::-webkit-scrollbar{
+    width: 0;
+}
+
+.ssItem{
+    border-radius: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(123, 123, 123);
+    margin: 15px;
+}
+
+.ssView{
+    animation-name: ss;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ss{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-500px);}
+}
+
+.collMain{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 10px;
+    /* margin: 20px; */
+    padding: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+}
+
+
+.collItem{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(123, 123, 123);
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.collView{
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: collAnim;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes collAnim {
+    0%{transform: scale(1);}
+    100%{transform: scale(3);}
+}
+
+.carMain{
+    width: 180px;
+    /* height: 130px; */
+    background-color: rgb(179, 179, 179);
+    overflow: scroll;
+    border-radius: 10px;
+    /* margin: 20px; */
+    flex-shrink: 0;
+
+    padding: 15px 10px;
+
+}
+
+.carMain::-webkit-scrollbar{
+    width: 0;
+}
+
+.carView{
+    display: flex;
+    align-items: center;
+    animation-name: carAnim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.carItem{
+    flex-shrink: 0;
+    border-radius: 10px;
+    height: 110px;
+    width: 110px;
+    background-color: rgb(123, 123, 123);
+    margin: 5px;
+}
+
+@keyframes carAnim {
+    0%{transform: translateX(0)}
+    100%{transform: translate(-200px);}
+}
