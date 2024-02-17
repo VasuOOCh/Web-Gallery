@@ -26,3 +26,7 @@ app.get("/carousel", (req,res) => {
 app.get("/ss", (req,res) => {
     res.render("ss.ejs");
 })
+
+app.get("/readme", (req,res) => {
+    res.render("readme.ejs")
+})
